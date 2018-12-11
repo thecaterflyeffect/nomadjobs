@@ -1,4 +1,4 @@
-job "system_utils" {
+job "syslog" {
   datacenters = ["dc1"]
   type        = "system"
 
@@ -7,7 +7,7 @@ job "system_utils" {
     max_parallel = 1
   }
 
-  group "system_utils" {
+  group "syslog" {
     constraint {
       distinct_hosts = true
     }
